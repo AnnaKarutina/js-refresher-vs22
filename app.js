@@ -1,27 +1,35 @@
-class Human{
-    // constructor() {
-    //     this.gender = 'male'
-    // }
-    gender = 'male'
+// const numbers = [1, 2, 3]
+// console.log(numbers)
+//
+// numbers.push(4)
+// console.log(numbers)
 
-    printGender(){
-        console.log(this.gender)
-    }
+// const numbers = [1, 2, 3]
+// console.log(numbers)
+//
+// const newNumbers = [...numbers]
+// numbers.push(4)
+//
+// console.log(newNumbers)
+// console.log(numbers)
+
+// const newNumbers = [...numbers, 4]
+// console.log(newNumbers)
+
+// const person = {
+//     name: 'Kertu'
+// }
+//
+// const newPerson = {
+//     ...person,
+//     age: 25
+// }
+//
+// console.log(person)
+// console.log(newPerson)
+
+const filter = (...args) => {
+    return args.filter(el => el === 1)
 }
 
-class Person extends Human{
-    constructor() {
-        super()
-        this.name = 'Kertu'
-        this.gender = 'female'
-    }
-
-    printName(){
-        console.log(this.name)
-    }
-}
-
-const person = new Person()
-console.log(person)
-person.printName()
-person.printGender()
+console.log(filter(1, 2, 3, 1))
