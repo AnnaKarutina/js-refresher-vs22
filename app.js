@@ -1,31 +1,31 @@
 console.log('JS Refreshing')
 
-// let & const
+// functions
 
-let number = 5
-console.log(number)
+// function callMe(name) {
+//     console.log(name)
+// }
 
-const numbers = [1, 2, 3]
-console.log(numbers)
-console.log(numbers[0])
-console.log(numbers[1])
-console.log(numbers[2])
-console.log(numbers[3])
-console.log(numbers.length)
+// const callMe = function(name){
+//     console.log(name)
+// }
 
-numbers.forEach(function(number, index){
-    console.log(`${number} - element indeksiga ${index}`)
-})
+// const callMe = (name) => {
+//   console.log(name)
+// }
 
-numbers.forEach((number, index) => {
-    console.log(`numbers[${index}] = ${number}`)
-})
+// const callMe = () => {
+//     console.log('Anna')
+// }
 
-const person = {
-    name: 'Kertu',
-    age: 25
-}
+// const callMe = name => {
+//   console.log(name)
+// }
 
-console.log(person)
-console.log(person.name)
-console.log(person.age)
+// const returnMe = name => {
+//     return name
+// }
+
+const returnMe = name => name
+
+console.log(returnMe('Anna'))
