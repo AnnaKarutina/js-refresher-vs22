@@ -1,31 +1,21 @@
-console.log('JS Refreshing')
+import person from "./person.js";
+import prsn from "./person.js"
 
-// functions
+import { cleanOutput } from './utils.js'
+import { data } from './utils.js'
 
-// function callMe(name) {
-//     console.log(name)
-// }
+import { cleanOutput as clean } from './utils.js'
 
-// const callMe = function(name){
-//     console.log(name)
-// }
+import * as utils from './utils.js'
 
-// const callMe = (name) => {
-//   console.log(name)
-// }
+console.log(person)
+console.log(prsn)
 
-// const callMe = () => {
-//     console.log('Anna')
-// }
+cleanOutput()
+console.log(data)
 
-// const callMe = name => {
-//   console.log(name)
-// }
+clean()
 
-// const returnMe = name => {
-//     return name
-// }
-
-const returnMe = name => name
-
-console.log(returnMe('Anna'))
+console.log(utils)
+console.log(utils.data)
+utils.cleanOutput()
