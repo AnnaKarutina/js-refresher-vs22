@@ -1,21 +1,27 @@
-import person from "./person.js";
-import prsn from "./person.js"
+class Human{
+    // constructor() {
+    //     this.gender = 'male'
+    // }
+    gender = 'male'
 
-import { cleanOutput } from './utils.js'
-import { data } from './utils.js'
+    printGender(){
+        console.log(this.gender)
+    }
+}
 
-import { cleanOutput as clean } from './utils.js'
+class Person extends Human{
+    constructor() {
+        super()
+        this.name = 'Kertu'
+        this.gender = 'female'
+    }
 
-import * as utils from './utils.js'
+    printName(){
+        console.log(this.name)
+    }
+}
 
+const person = new Person()
 console.log(person)
-console.log(prsn)
-
-cleanOutput()
-console.log(data)
-
-clean()
-
-console.log(utils)
-console.log(utils.data)
-utils.cleanOutput()
+person.printName()
+person.printGender()
